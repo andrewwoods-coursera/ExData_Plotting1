@@ -25,7 +25,7 @@ datetime <- strptime(paste(DT$Date, DT$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
 png(file="plot4.png")
 par(mfrow = c(2, 2))
 # 1,1
-plot(datetime, DT$Global_active_power, type="l", xlab = "", ylab = "Global Active Power (killowatts)")
+plot(datetime, DT$Global_active_power, type="l", xlab = "", ylab = "Global Active Power (kilowatts)")
 
 # 1,2
 plot(datetime, DT$Voltage, type="l", xlab = "datetime", ylab = "Voltage")

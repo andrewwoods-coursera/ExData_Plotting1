@@ -23,5 +23,5 @@ datetime <- strptime(paste(DT$Date, DT$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
 # plot 1
 # open png device.  480x480 is the default resolution
 png(file="plot1.png")
-hist(DT$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (killowatts)")
+hist(DT$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
 dev.off()
